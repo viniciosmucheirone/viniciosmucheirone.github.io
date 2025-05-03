@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Definição do conjunto de caracteres e viewport para responsividade -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Título da Página -->
+  <title>Vinicios Mucheirone - Portfólio</title>
+  
+  <!-- Link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Importação de fontes do Google Fonts -->
+  <!-- Você pode também mover esse @import para o arquivo CSS externo -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Silkscreen:wght@400;700&family=Yusei+Magic&display=swap');
+  </style>
+  
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Font-mfizz para outros ícones (se necessário) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
+</head>
+<body>
+  <!-- MENU FIXO (deve vir primeiro no corpo) -->
+  <nav>
+    <!-- Botão para dispositivos móveis com aria-label para acessibilidade -->
+    <button id="menu-toggle" aria-label="Abrir menu">
+        <i class="fas fa-bars"></i>
+    </button>
+    <!-- Menu de navegação -->
+    <ul id="menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#ferramentas">Ferramentas</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+  w
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <div class="container">
+    <!-- CABEÇALHO - Seção "Sobre" -->
+    <header>
+      <div id="sobre">
+          <img src="img/profile.png" alt="Camylla Oliveira">
+          <div class="header-content">
+              <h1>Vinicios Mucheirone</h1>
+              <div class="bio-text">
+                <p>
+                <p> Formado em Farmácia pela Uninove, com pós-graduação em Farmácia Clínica pela PUCRS. Atuei por anos na área da saúde, desenvolvendo capacidade analítica, atenção aos detalhes e experiência na interpretação de informações técnicas — habilidades que hoje aplico na área de dados. </p>
+                <p> Estou em transição de carreira e atualmente curso Banco de Dados na Faculdade Impacta, além de estar me formando como Analista de Dados pela Data Science Academy, com foco em Power BI, SQL e Python, por meio de projetos práticos. Minha experiência na saúde, aliada à formação em dados, me dá uma visão analítica diferenciada, capaz de gerar insights e soluções de valor.</p>                
+                <p><em>Tenho 4 certificações Microsoft, que me deram uma base sólida em nuvem, bancos de dados, inteligência artificial e automação — conhecimentos que vão além das ferramentas da Microsoft e me ajudam a entender melhor como os dados são estruturados, processados e aplicados para gerar valor.</em></p>
+                 
+            </div>
+            <h2 style="margin-bottom: 10px;">Certificações</h2>
+            <img src="img/certificações.png"
+                 alt="Certificações de Vinicios Mucheirone"
+                 style="max-width: 70%; height: auto; border: none; border-radius: 0;">
+          </div>
+      </div>
+  </header>
+
+    
+    <!-- SEÇÃO DE FERRAMENTAS -->
+    <section id="ferramentas">
+      <h2>Principais Ferramentas</h2>
+      <!-- Linha 1 - Ferramentas de Dados -->
+      <div class="linha-ferramentas">
+        <div class="tool-item">
+          <i class="fas fa-database"></i>
+          <span>SQL</span>
+        </div>
+        <div class="tool-item">
+          <i class="fas fa-server"></i>
+          <span>Google BigQuery</span>
+        </div>
+        <div class="tool-item">
+          <i class="fas fa-chart-bar"></i>
+          <span>Power BI</span>
+        </div>
+        <div class="tool-item">
+          <i class="fab fa-python"></i>
+          <span>Python</span>
+        </div>
+        <div class="tool-item">
+          <i class="fas fa-cloud"></i>
+          <span>Microsoft Azure</span>
+        </div>
+      </div>
+    </section>
+    
+<!-- SEÇÃO DE PROJETOS -->
+<section id="projetos">
+  <h2>Projetos Destacados</h2>
+
+  <!-- Filtros -->
+  <div class="filtro-container">
+    <button class="filtro-btn active" data-filtro="todos">Todos</button>
+    <button class="filtro-btn" data-filtro="python">Python</button>
+    <button class="filtro-btn" data-filtro="powerbi">Power BI</button>
+    <button class="filtro-btn" data-filtro="sql">SQL</button>
+    <button class="filtro-btn" data-filtro="java">Java</button>
+    <button class="filtro-btn" data-filtro="ia">IA</button>
+  </div>
+
+  <div class="grid-projetos">
+    <!-- Projeto 1 -->
+    <div class="projeto-card python">
+      <div class="projeto-content">
+        <h3>Análise do comércio Varejista</h3>
+        <div class="projeto-tags">
+        <span>Python</span><span>Numpy</span><span>Pandas</span>
+        </div>
+        <p>Análise exploratória de dados a partir de um dataset sobre uma rede de varejo que comercializa vários produtos em diversas cidades dos EUA.</p>
+        <div class="projeto-links">
+          <a href="https://github.com/viniciosmucheirone/Analises-Varejo-Python" target="_blank" class="github-btn"><i class="fab fa-github"></i> Código</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Projeto 2 -->
+    <div class="projeto-card java">
+      <div class="projeto-content">
+        <h3> Biblioteca virtual de Livros</h3>
+        <div class="projeto-tags">
+        <span>Java</span><span>PostgreSQL</span><span>Spring Boot 3</span>
+        </div>
+        <p>Desenvolvi uma API REST utilizando Java 17 e Spring Boot 3 para uma biblioteca virtual, com integração a banco de dados via Spring Data JPA.</p>
+        <div class="projeto-links">
+          <a href="https://github.com/viniciosmucheirone/DIO-Bliblioteca-API" target="_blank" class="github-btn"><i class="fab fa-github"></i> Código</a>
+        </div>
+      </div>
+    </div>
+
+   <!-- Projeto 3 -->
+    <div class="projeto-card java">
+      <div class="projeto-content">
+        <h3> Agendamento para Barbearia</h3>
+        <div class="projeto-tags">
+        <span>Java</span><span>MySQL</span><span>Maven</span>
+        </div>
+        <p>Desenvolvimento de um sistema de agendamento para barbearias. Dividido em duas partes: Frontend e Backend</p>
+          <div class="projeto-links">
+            <a href="https://github.com/viniciosmucheirone/DIO-APP-Agendamento-Barbearia" target="_blank" class="github-btn"><i class="fab fa-github"></i> Código</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Projeto 4 -->
+    <div class="projeto-card java">
+      <div class="projeto-content">
+        <h3>Criando um Blog com Angular</h3>
+        <div class="projeto-tags">
+        <span>Java</span><span>HTML/CSS</span>
+        </div>
+        <p>Este projeto é um desenvolvimento de um blog construído utilizando Angular.</p>
+          <div class="projeto-links">
+            <a href="https://github.com/viniciosmucheirone/DIO-Blog-Angular" target="_blank" class="github-btn"><i class="fab fa-github"></i> Código</a>
+          </div>
+        </div>
+      </div>
+
+        <!-- Projeto 5 -->
+    <div class="projeto-card java">
+      <div class="projeto-content">
+        <h3>Criando um Clone do BuzzFeed com Angular</h3>
+        <div class="projeto-tags">
+        <span>Java</span><span>Bootstrap 5</span>
+        </div>
+        <p>Aplicação interativa no estilo BuzzFeed, com quizzes e resultados dinâmicos, utilizando o Angular.</p>
+          <div class="projeto-links">
+            <a href="https://github.com/viniciosmucheirone/DIO-BuzzFeed-Angular" target="_blank" class="github-btn"><i class="fab fa-github"></i> Código</a>
+          </div>
+        </div>
+      </div>
+    
+        <!-- Projeto 6 -->
+    <div class="projeto-card java">
+      <div class="projeto-content">
+        <h3>Criando um Board de Tarefas com Java</h3>
+        <div class="projeto-tags">
+        <span>Java</span><span>Gradle</span>
+        </div>
+        <p>Aplicação de gerenciamento de tarefas utilizando Java, com foco nas melhores práticas de desenvolvimento.</p>
+          <div class="projeto-links">
+            <a href="https://github.com/viniciosmucheirone/DIO-Board-Java" target="_blank" class="github-btn"><i class="fab fa-github"></i> Código</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 7 -->
+    <div class="projeto-card ia">
+      <div class="projeto-content">
+        <h3>Análise de Sentimentos com Language Studio no Azure AI</h3>
+        <div class="projeto-tags">
+        <span>IA</span><span> Microsoft Language service</span>
+        </div>
+        <p>Avaliar o comentário de um usuário para um parque de diversões,através da análise de sentimentos do Azure.</p>
+        <div class="projeto-links">
+          <a href="https://github.com/viniciosmucheirone/DIO-Analise-Sentimentos-Language-Studio" target="_blank" class="github-btn"><i class="fab fa-github"></i> Código</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Projeto 8 -->
+    <div class="projeto-card ia">
+      <div class="projeto-content">
+        <h3>Pesquisa Cognitiva do Azure</h3>
+        <div class="projeto-tags">
+        <span>IA</span><span>Microsoft Machine Learning</span>
+        </div>
+        <p>Esse projeto foi desenvolvido através do Azure Cognitive Search, onde ajudou a encontrar opiniões de clientes de uma cafeteria a respeito de seus serviços..</p>
+        <div class="projeto-links">
+          <a href="https://github.com/viniciosmucheirone/DIO-AI-Search-Indexacao-Dados" target="_blank" class="github-btn"><i class="fab fa-github"></i> Código</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Projeto 9 -->
+    <div class="projeto-card ia">
+      <div class="projeto-content">
+        <h3>Explorando os Recursos de IA Generativa com Copilot e OpenAI</h3>
+        <div class="projeto-tags">
+        <span>IA</span><span>Microsoft Copilot</span>
+        </div>
+        <p>Esse projeto irá testar e entender o poder das IA generativa da Microsoft Copilot e OpenAI.</p>
+        <div class="projeto-links">
+          <a href="https://github.com/viniciosmucheirone/DIO-IA-Generativa-Copilot-OpenAI" target="_blank" class="github-btn"><i class="fab fa-github"></i> Código</a>
+        </div>
+      </div>
+    </div>
+
+
+<!-- JS para filtro -->
+<script>
+  const filtroBtns = document.querySelectorAll(".filtro-btn");
+  const projetos = document.querySelectorAll(".projeto-card");
+
+  filtroBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      filtroBtns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const filtro = btn.getAttribute("data-filtro");
+      projetos.forEach(projeto => {
+        projeto.style.display = 
+          filtro === "todos" || projeto.classList.contains(filtro) 
+          ? "block" 
+          : "none";
+      });
+    });
+  });
+</script>
+
+<!-- CSS exemplo para estilo moderno -->
+<style>
+.filtro-container {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center; /* Centraliza os botões */
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filtro-btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.filtro-btn.active, .filtro-btn:hover {
+  background-color: #007bff;
+}
+</style>
+
+
+    </div>
+  </div>
+</div>
+  </div> <!-- Fim da grid de projetos -->
+</section>
+
+    
+    <!-- SEÇÃO DE CONTATO -->
+    <section id="contato">
+      <h2>Fale comigo</h2>
+      <div class="contato-content">
+        <p>Será um prazer trabalhar com você!</p>
+        <!-- Ícones Sociais -->
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/viniciosmucheirone/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/viniciosmucheirone" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.instagram.com/vinimucheironi/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <!-- Informações de Contato -->
+        <ul class="contact-info">
+          <li><i class="fas fa-phone-alt"></i> 12 98838-7188</li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:viniciosmucheirone@icloud.com">viniciosmucheirone@icloud.com</a></li>
+        </ul>
+      </div>
+    </section>
+  </div> <!-- Fim do container principal -->
+  
+  <!-- RODAPÉ -->
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Vinicios Mucheirone. Todos os direitos reservados.</p>
+  </footer>
+  
+  <!-- BOTÃO "VOLTAR AO TOPO" -->
+  <button id="topoBtn" title="Voltar ao topo">↑</button>
+  
+  <!-- SCRIPTS JAVASCRIPT -->
+  <script src="/java script/javascript.js"></script>
+</body>
+</html>
